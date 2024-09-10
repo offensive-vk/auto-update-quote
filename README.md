@@ -1,8 +1,6 @@
-# Random Quote/Fact in Github Readme
+# Random Quote or Fact in Github Readme
 
 ![Github Socialify](https://socialify.git.ci/offensive-vk/auto-update-quote/image?font=Source%20Code%20Pro&forks=1&issues=1&pattern=Brick%20Wall&stargazers=1&theme=Dark)
-
----
 
 Action that allows you to add and update a random quote or fact on your README
 
@@ -66,7 +64,7 @@ on:
 
 jobs:
   update-readme:
-    name: Update Quote README
+    name: Update Quote
     runs-on: ubuntu-latest
     steps:
       - uses: offensive-vk/auto-update-quote@master
@@ -174,17 +172,3 @@ To run tests simply execute the following in the directory containing `master.py
 ```bash
 python -m unittest discover
 ```
-
----
-
-#### Another intriguing action you would want to use - [update-readme-image](https://github.com/marketplace/actions/update-image-readme)
-
-#### Check out the [scripts](https://github.com/offensive-vk/auto-update-quote/tree/master/scripts) folder to know more about how quotes/facts were retrieved
-
-#### If you liked this Action and want to contribute to upgrade this utility, please create an issue or throw a PR !
-
----
-
-#### Inspired From
-
-[athul/waka-readme](https://github.com/athul/waka-readme)
