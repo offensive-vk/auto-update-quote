@@ -8,7 +8,6 @@ import unittest
 from unittest.mock import patch, Mock
 
 class TestQuoteReadme(unittest.TestCase):
-
     def test_get_option_list(self):
         with patch('main.get_quotes') as mockquotes:
             with patch('main.get_funfacts') as mockfacts:
@@ -35,9 +34,6 @@ class TestQuoteReadme(unittest.TestCase):
                 mockquote.return_value = '\xa0mock quote.\n'
                 actual = get_text_to_display()
                 self.assertEqual('<i>❝ mock quote.❞</i>', actual)
-
-            
-
 
 if __name__ == "__main__":
     unittest.main()

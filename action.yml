@@ -1,10 +1,10 @@
 name: "Auto Update Quote"
 author: Vedansh
-description: "Update Your Readme with a random quote or fun-fact on your Readme"
+description: "Update Your Readme with a random quote or fun-fact."
 
 inputs:
   GH_TOKEN:
-    description: "GitHub access token with Repo scope"
+    description: "GitHub access token with Scoped Github PAT"
     required: true
     default: ${{ github.token }}
 

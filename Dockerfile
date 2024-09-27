@@ -13,5 +13,5 @@ CMD ["python", "/main.py"]
 LABEL \
   "name"="Auto Update Quote" \
   "homepage"="https://github.com/marketplace/actions/auto-update-quote" \
-  "repository"="https://github.com/offensive-vk/update-quote" \
+  "repository"="https://github.com/offensive-vk/auto-update-quote" \
   "maintainer"="TheHamsterBot <TheHamsterBot@users.noreply.github.com>"

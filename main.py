@@ -1,5 +1,5 @@
 ###############################
-# All Rights Reserved. 2020-2024
+# main.py - Entrypoint Program#
 ###############################
 import os
 import re
