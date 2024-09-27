@@ -2,17 +2,11 @@
 
 ![Github Socialify](https://socialify.git.ci/offensive-vk/auto-update-quote/image?font=Source%20Code%20Pro&forks=1&issues=1&pattern=Brick%20Wall&stargazers=1&theme=Dark)
 
-Action that allows you to add and update a random quote or fact on your README
+Action that allows you to add and update a random quote or fact on your README or Docs.
 
 ---
 
 ## Random Quote/Fact on your (Profile) Readme
-
-### How To Use This Action
-
-There is a short tutorial with enough steps for you to get started with this not-so-useful GitHub Action. Check that out [here](https://chandraji.dev/auto-update-quote-see-wonderful-quotesfun-facts-on-your-github-profile-readme).
-
-If you want to get an in-depth idea of the usage of this action, please follow the below points.
 
 ### Prepare Your Repository
 
@@ -35,6 +29,7 @@ Add a comment to your `README.md` like this:
 
 ```md
 <!--STARTS_HERE_QUOTE_README-->
+
 <!--ENDS_HERE_QUOTE_README-->
 ```
 
@@ -67,7 +62,7 @@ jobs:
     name: Update Quote
     runs-on: ubuntu-latest
     steps:
-      - uses: offensive-vk/auto-update-quote@master
+      - uses: offensive-vk/auto-update-quote@v5
 ```
 
 3. There is another tag as well you can use, `OPTION` that would allow you to specify what you want either a quote or a fact to be displayed, by default it is `both`. Check [examples](#examples) for more.
@@ -95,7 +90,7 @@ You need to save the GitHub API Token in the repository secrets. You can find th
 2. Copy the following code and paste it to your new workflow you created at step 1, commit the workflow with whatever name you like !
 
 ```yml
-name: Update Quote Readme
+name: Update Quote
 
 on:
   workflow_dispatch:
@@ -132,7 +127,7 @@ jobs:
 1. If you want to use this action for a README that is not present in current workflow repository.
 
 ```yml
-- uses: offensive-vk/update-readme-image@master
+- uses: offensive-vk/auto-update-quote@v5
   with:
     GH_TOKEN: ${{ secrets.GH_TOKEN }}     # Needed if README repository is not profile repo
     REPOSITORY: <username>/<differentrepo>
@@ -145,7 +140,7 @@ For example, if your workflow is present in `<username>/repo1` and you want to u
 2. You can specify a commit message to override the default _"Update with auto-update-quote"_.
 
 ```yml
-- uses: offensive-vk/update-readme-image@master
+- uses: offensive-vk/auto-update-quote@v5
   with:
     GH_TOKEN: ${{ secrets.GH_TOKEN }}     # Needed if README repository is not profile repo
     REPOSITORY: <username>/<differentrepo>  # Needed if README repository is not current repo
@@ -155,7 +150,7 @@ For example, if your workflow is present in `<username>/repo1` and you want to u
 3. You can also choose if you only want either a random `quote` or a random `funfact` to appear on your readme, by default it is `both`.
 
 ```yml
-- uses: offensive-vk/update-readme-image@master
+- uses: offensive-vk/auto-update-quote@v5
   with:
     GH_TOKEN: ${{ secrets.GH_TOKEN }}     # Needed if README repository is not profile repo
     REPOSITORY: <username>/<differentrepo>  # Needed if README repository is not current repo
@@ -172,3 +167,12 @@ To run tests simply execute the following in the directory containing `master.py
 ```bash
 python -m unittest discover
 ```
+
+***
+
+<p align="center">
+  <i>&copy; <a href="https://github.com/offensive-vk/">Vedansh </a> 2020 - Present</i><br>
+  <i>Licensed under <a href="https://github.com/offensive-vk/auto-update-quote?tab=MIT-1-ov-file">MIT</a></i><br>
+  <a href="https://github.com/TheHamsterBot"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" alt="hamster"/></a><br>
+  <sup>Thanks for visiting :)</sup>
+</p>
