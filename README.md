@@ -43,7 +43,7 @@ Add a comment to your `README.md` like this:
 1. If you want to use this action for a README that is not present in current workflow repository.
 
 ```yml
-- uses: offensive-vk/auto-update-quote@v5
+- uses: offensive-vk/auto-update-quote@v7
   with:
     GH_TOKEN: ${{ secrets.GH_TOKEN }}     # Needed if README repository is not profile repo
     REPOSITORY: <username>/<differentrepo>
@@ -56,7 +56,7 @@ For example, if your workflow is present in `<username>/repo1` and you want to u
 2. You can specify a commit message to override the default _"Update with auto-update-quote"_.
 
 ```yml
-- uses: offensive-vk/auto-update-quote@v5
+- uses: offensive-vk/auto-update-quote@v7
   with:
     GH_TOKEN: ${{ secrets.GH_TOKEN }}     # Needed if README repository is not profile repo
     REPOSITORY: <username>/<differentrepo>  # Needed if README repository is not current repo
@@ -66,7 +66,7 @@ For example, if your workflow is present in `<username>/repo1` and you want to u
 3. You can also choose if you only want either a random `quote` or a random `funfact` to appear on your readme, by default it is `both`.
 
 ```yml
-- uses: offensive-vk/auto-update-quote@v5
+- uses: offensive-vk/auto-update-quote@v7
   with:
     GH_TOKEN: ${{ secrets.GH_TOKEN }}     # Needed if README repository is not profile repo
     REPOSITORY: <username>/<differentrepo>  # Needed if README repository is not current repo
