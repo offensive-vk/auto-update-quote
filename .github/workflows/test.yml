@@ -13,7 +13,7 @@ jobs:
         with:
           GH_TOKEN: ${{ secrets.BOT_TOKEN || secrets.GITHUB_TOKEN }}
           COMMIT_MESSAGE: |
-            :cloud: Updated Daily Quote 
+            :cloud: Updated Daily Random Quote 
 
 
             Signed-off-by: Hamster [bot] <TheHamsterBot@outlook.com> 
