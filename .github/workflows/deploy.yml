@@ -8,7 +8,7 @@ on:
 
 jobs:
   call-ghcr-workflow:
-    uses: offensive-vk/Assets/blob/master/.github/workflows/ghcr.yml@master
+    uses: offensive-vk/Assets/.github/workflows/ghcr.yml@master
     with:
       author: "Vedansh"
       title: "auto-update-quote"
